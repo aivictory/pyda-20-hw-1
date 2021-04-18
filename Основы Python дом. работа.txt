@@ -1,0 +1,86 @@
+
+Задание 1:
+phrase_1 = input('Введите Фразу 1:')
+phrase_2 = input('Введите Фразу 2:')
+
+if len (phrase_1) < len (phrase_2):
+    print('Фраза 1 короче Фразы 2')
+elif len (phrase_1) > len (phrase_2):
+    print('Фраза 1 длиннее Фразы 2')
+elif len (phrase_1) == len (phrase_2):
+    print('Фраза 1 и Фраза 2 содержат одинаковое количество символов')
+print ('Конец программы')
+
+
+Задание 2: 
+
+year = int(input('Введите  год:'))
+
+if year % 400 == 0:
+    print ('%d високосный год' %year)
+elif year % 100 == 0:
+    print ('%d обычный год' %year)
+elif year % 4 == 0:
+    print ('%d високосный год' %year)
+else:
+    print ('%d обычный год' %year)
+    
+print ('Конец программы')
+
+
+Задание 3:
+date=int(input("Введите день рождения:"))
+
+month=int(input("Введите месяц рождения:"))
+
+if (date >= 21 and date <= 31 and month == 3) or (date >= 1 and date <= 20 and month == 4):
+    print ('Ваш знак зодиака: Овен')
+elif (date >= 21 and date <= 30 and month == 4) or (date >= 1 and date <= 21 and month == 5):
+    print ('Ваш знак зодиака: Телец')
+elif (date >= 22 and date <= 31 and month == 5) or (date >= 1 and date <= 21 and month == 6):
+    print ('Ваш знак зодиака: Близнецы')
+elif (date >= 22 and date <= 30 and month == 6) or (date >= 1 and date <= 22 and month == 7):
+    print ('Ваш знак зодиака: Рак')
+elif (date >= 23 and date <= 31 and month == 7) or (date >= 1 and date <= 23 and month == 8):
+    print ('Ваш знак зодиака: Лев')
+elif (date >= 24 and date <= 31 and month == 8) or (date >= 1 and date <= 22 and month == 9):
+    print ('Ваш знак зодиака: Дева')
+elif (date >= 23 and date <= 30 and month == 9) or (date >= 1 and date <= 22 and month == 10):
+    print ('Ваш знак зодиака: Весы')
+elif (date >= 23 and date <= 31 and month == 10) or (date >= 1 and date <= 22 and month == 11):
+    print ('Ваш знак зодиака: Скорпион')
+elif (date >= 22 and date <= 30 and month == 11) or (date >= 1 and date <= 21 and month == 12):
+    print ('Ваш знак зодиака: Стрелец')
+elif (date >= 22 and date <= 31 and month == 12) or (date >= 1 and date <= 20 and month == 1):
+    print ('Ваш знак зодиака: Козерог')
+elif (date >= 21 and date <= 31 and month == 1) or (date >= 1 and date <= 19 and month == 2):
+    print ('Ваш знак зодиака: Водолей')
+elif (date >= 20 and date <= 29 and month == 2) or (date >= 1 and date <= 20 and month == 3):
+    print ('Ваш знак зодиака: Рыбы')
+print ('Конец программы')
+
+
+Задание 4
+width = input('Введите  ширину в см: ')
+length = input('Введите  длину в см: ')
+height = input('Введите  высоту в см: ')
+while True:
+    if (width.isnumeric() and length.isnumeric() and height.isnumeric()):
+        width = int(width)
+        length = int(length)
+        height = int(height)
+        break
+    else:
+        print('Вводить можно только числа')
+        width = input('Введите  ширину в см: ')
+        length = input('Введите  длину в см: ')
+        height = input('Введите  высоту в см: ')
+    
+if (length > 200):
+    print('Упаковка для лыж')
+elif (width < 15 and length < 15 and height < 15):
+    print('Коробка№1')
+elif (15 < width < 50 or 15 < length < 50  or 15 < height < 50):
+    print('Коробка№2')
+else:
+    print('Стандартная коробка№3')
